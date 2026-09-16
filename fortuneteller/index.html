@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+   
+
+    <title>Magic 8 Ball</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- this is the start of content -->
+    <h1>
+      Magic 8 Ball
+    </h1>
+    <img src="Magic 8 Ball.png" width="100">
+    <form name="fortuneTeller" id="fortuneTeller" action="fortune.html">
+      
+      <label for="questionfield">Question:</label>
+      <input type="text" id="questionfield" name="question" placeholder="ask a yes or no pls" required>
+      <br>
+      <label for="useremail">An email</label> 
+      <input type="email" id="useremail" name="email" placeholder="doesn't have to be real" >
+      <br>
+      <label for="use">Have you used this before?</label>
+      <input type="checkbox" id="use" name="used">
+      <br>
+      <label for="color">Choose a color</label>
+      <input type="color" name="chosen" id="color">
+      <br>
+      <label for="some">Opinion on this </label>
+      <select name="Opinion" id="some">
+        <option value="good">This good</option>
+        <option value="bad">This bad</option>
+        <option value="okay">This okay</option>
+      </select>
+      <br>
+      <label for="random">Say my name</label>
+      <textarea id="random" name="answer" placeholder="magic 8 ball"></textarea>
+      <br>
+      <input type="submit">
+    </form>
+    <div id="fortune"></div>
+  </body>
+</html>
